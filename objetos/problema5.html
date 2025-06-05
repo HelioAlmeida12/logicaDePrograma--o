@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1>Objetos</h1>
+    <script>
+
+
+        /*Dado os seguintes objetos: */
+        const endereco = {
+            rua: "Rua 24",
+            numero: 7,
+        };
+
+        const pessoa = {
+            nome: "Helio",
+            sobrenome: "Almeida",
+            endereco
+            
+        };
+
+        document.write(`O ${pessoa.nome} mora na rua ${endereco.rua} numero ${endereco.numero}`)
+
+        //Loop for..in serve para interagir com um objeto
+        for(let prop in pessoa){
+            //console.log(prop)
+            //console.log(pessoa.prop)
+            console.log(pessoa[prop])
+        }
+
+        
+
+        /*Mostre no console todas as propriedades e seus respectivos valores do objeto pessoa*/
+
+
+    </script>
+</body>
+</html>

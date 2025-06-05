@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Mostre a seguinte mensagem na tela: 
+        "O carro Uno 2023 fez em média xxx Km/L de gasolina"*/
+
+
+        const carro = {
+            marca: "Fiat",
+            modelo: "Uno",
+            ano: 2023,
+            km: 10000,
+            combustivel: "gasolina",
+            listrosConsumidos: 625
+
+            
+        };
+
+        let consumo = carro.km / carro.listrosConsumidos
+        
+     document.write(`O carro da marca ${carro.marca} e modelo ${carro.modelo} do ano ${carro.ano} fez em média ${consumo} Km/L de ${carro.combustivel}`)
+
+
+    </script>
+</body>
+</html>

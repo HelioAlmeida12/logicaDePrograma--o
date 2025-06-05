@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loops - tabuada</h1>
+
+    <script>
+        /*Pedir para o usuário digitar 1 número e mostrar
+        a tabuada desse número de 0 até 1000*/
+
+        let n = parseFloat(prompt("Digite um número: "))
+
+        if (!isNaN(n)) {
+
+            for (i = 0; i <= 1000; i++){
+                document.write(n + " x " + i + " : " + n * i + "<br>")
+        }
+        document.write("Saiu do loop")
+
+        
+            
+        }else {
+            alert("Digite apenas números")
+        }
+
+
+    </script>
+</body>
+
+</html>
